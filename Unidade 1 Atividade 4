@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <locale.h>
+int main (){
+	setlocale (LC_ALL,"Portuguese");
+	int num1,num2,num3,num4;
+	printf("Digite 4 numero inteiros:\n");
+	scanf("\n%d" "\n%d" "\n%d" "\n%d" ,&num1,&num2,&num3,&num4);
+	double media = (num1+num2+num3+num4)/4;
+	printf("\nA média dos números é: %2.f",media);
+	return (0);
+}
