@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+	int num;
+	printf("digite um numero inteiro positivo: ");
+	scanf("%d",&num);
+	if(num >= 0) 
+	{
+		double raiz = sqrt(num);
+		int quadrado = num*num;
+		printf("\nA raiz quadrada do numero e:%2.f\n",raiz);
+		printf("O quadradro do numero e:%d",quadrado);
+	}else
+	    {
+		printf("Numero Invalido");
+		}
+	return (0);	
+}
