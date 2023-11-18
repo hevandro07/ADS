@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <locale.h>
+int main(){
+	setlocale (LC_ALL,"");
+	int num, resto1, resto2;
+	printf("Digite um númmero: ");
+	scanf("%d",&num);
+	resto1= num % 3;
+	resto2= num % 7;
+	if ((resto1 == 0) && (resto2 == 0)){
+		printf("Numero digitado divisivel por 3 e 7");
+	}else{
+		printf("Numero digitado nao divisivel por 3 e 7");
+	}
+	return (0);
+}
