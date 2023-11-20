@@ -30,6 +30,8 @@ int main (){
 			salatual=salario + aumento;
 			printf("\nCargo:Técnico de segurança\nAumento de r$:%2.f\nsalario novo de r$:%2.f",aumento,salatual);
 			break;
+                 default:
+			printf("Cargo Invalido!");
 	}
 	return (0);
 }
