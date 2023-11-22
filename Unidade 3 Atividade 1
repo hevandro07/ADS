@@ -30,7 +30,6 @@ int main(){
 	}while(num!=0);
 	media= total / i;
 	system ("cls");
-	system ("pause");
 	printf("A media dos valores é:%2f\n",media);
 	printf("\nO maior numero é:%d\n",maior);
 	printf("\nO menor numero é:%d\n",menor);
