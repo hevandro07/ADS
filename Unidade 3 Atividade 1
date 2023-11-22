@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <math.h>
+int main(){
+	setlocale (LC_ALL,"");
+	int num, maior, menor, total, i, pares, impares;
+	float media;
+	maior=0;
+	total=0;
+	menor = HUGE_VAL;
+	i=0;
+	pares=0;
+	impares=0;
+	num=1;
+	do{
+		printf("Digite um numero inteiro, ou 0 para sair:\n");
+		scanf("%d",&num);
+		if(num != 0)
+		     i++;
+		     total= total+num;
+		if(num % 2 == 0 && num != 0)
+			pares ++;
+		else if(num % 2 && num != 0)
+			impares ++;
+		if(num>maior && num != 0)
+		    maior=num;
+		if(num < menor && num != 0)
+			menor=num;
+	}while(num!=0);
+	media= total / i;
+	system ("cls");
+	system ("pause");
+	printf("A media dos valores é:%2f\n",media);
+	printf("\nO maior numero é:%d\n",maior);
+	printf("\nO menor numero é:%d\n",menor);
+	printf("\nTotal de numeros pares: %d\n",pares);
+	printf("\nTotal de numeros impares: %d",impares);
+	return (0);
+}
